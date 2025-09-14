@@ -1,0 +1,89 @@
+.experience-section {
+  background-color: #0a0a0a;
+  padding: 4rem 1rem;
+}
+
+.experience-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #00d8ff;
+  text-align: center;
+}
+
+.experience-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.experience-header h4 {
+  color: #ffc107;
+  font-size: 1.25rem;
+}
+
+.experience-header span {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.experience-role {
+  color: #17a2b8;
+  margin-bottom: 0.5rem;
+}
+
+.experience-details {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-section h2 {
+    font-size: 2rem;
+  }
+
+  .experience-card {
+    padding: 1.5rem;
+  }
+
+  .experience-details {
+    font-size: 0.9rem;
+  }
+}
+/* Animation keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate class */
+.experience-card.animate {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}

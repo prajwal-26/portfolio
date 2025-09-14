@@ -1,0 +1,120 @@
+/* ProofModal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  background: white;
+  padding: 1rem;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #e1dada;
+}
+
+.image-scroll-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  max-height: 70vh;
+  padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+.proof-image {
+  max-height: 400px;
+  max-width: 600px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.projects {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #00ff00;
+}
+
+.projects-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  flex: 0 0 45%;
+  border-radius: 15px;
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-title {
+  color: #00ff00;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.proof-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px 0 10px 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.proof-btn:hover {
+  transform: scale(1.05);
+}

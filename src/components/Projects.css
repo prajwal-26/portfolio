@@ -1,0 +1,76 @@
+.projects {
+  background-color: #0d0d0d;
+  color: #f0f0f0;
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00d8ff;
+}
+
+.projects-scroll-wrapper {
+  overflow-x: auto;
+  padding-bottom: 20px;
+  padding-left: 60px; 
+}
+
+
+
+ 
+.projects-container {
+  display: flex;
+  gap: 20px;
+  min-height: 100%;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-left: 60px;
+}
+
+
+.project-card {
+  flex: 0 0 calc(50% - 20px);  
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  scroll-snap-align: start;
+  min-height: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-title {
+  color:  #00d8ff;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  margin-top: 20px;
+}
+
+.project-links a,
+.project-links button {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #00ffcc;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.project-links button:hover,
+.project-links a:hover {
+  color: #00ffaa;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.social-icons {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 12px 10px;
+  z-index: 9999;
+  gap: 20px;
+  background-color: transparent; /* Removed black background */
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1db954; /* green hover effect */
+  transform: scale(1.2);
+}

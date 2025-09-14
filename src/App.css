@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+body {
+  background-color: #000;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  scroll-margin-top: 80px;
+  padding: 60px 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
+  scroll-margin-top: 75px; /* Keeps scroll content visible below fixed navbar */
+}
+/* src/components/SocialSidebar.css */
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  padding: 10px;
+  background-color: #111;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1000;
+}
+
+.social-sidebar a {
   color: white;
+  font-size: 24px;
+  transition: transform 0.3s, color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-sidebar a:hover {
+  color: #1db954;
+  transform: scale(1.2);
 }
