@@ -57,7 +57,7 @@
 .project-links button {
   margin-right: 15px;
   text-decoration: none;
-  color: #00ffcc;
+  color:  #00d8ff;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -66,7 +66,7 @@
 
 .project-links button:hover,
 .project-links a:hover {
-  color: #00ffaa;
+  color:  #00d8ff;
 }
 
 @media (max-width: 768px) {

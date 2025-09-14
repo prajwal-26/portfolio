@@ -43,7 +43,7 @@
 
 .contact-form button {
   padding: 1rem;
-  background: #00df9a;
+  background:  #00d8ff;
   color: #000;
   font-weight: bold;
   border: none;
@@ -53,7 +53,7 @@
 }
 
 .contact-form button:hover {
-  background: #00b580;
+  background:  #00d8ff;
   transform: scale(1.03);
 }
 

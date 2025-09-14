@@ -61,7 +61,7 @@
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #00ff00;
+  color:  #00d8ff;
 }
 
 .projects-container {
@@ -89,7 +89,7 @@
 }
 
 .project-title {
-  color: #00ff00;
+  color: #00d8ff;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -106,7 +106,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: #00ff00;
+  background-color:  #00d8ff;
   color: #000;
   border: none;
   padding: 8px 16px;

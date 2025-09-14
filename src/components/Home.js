@@ -26,7 +26,7 @@ const Home = () => {
       {/* Center Text */}
       <div className="text-center main-text" data-aos="fade-up">
         <h1 className="display-4 fw-bold">Hi, I'm Prajwal</h1>
-        <p className="lead text-secondary">DevOps Engineer | Cloud Enthusiast | Automation Lover</p>
+        <p className="lead text-secondary">DevOps Engineer specializing in cloud platforms, automation, and scalable deployments</p>
       </div>
 
       {/* Right tools */}
