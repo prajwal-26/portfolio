@@ -8,10 +8,10 @@ function SocialIcons() {
       <a href="https://github.com/prajwal-26" target="_blank" rel="noreferrer">
         <FaGithub />
       </a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+      <a href="https://www.linkedin.com/in/prajwal2608/" target="_blank" rel="noreferrer">
         <FaLinkedin />
       </a>
-      <a href="https://x.com/yourusername" target="_blank" rel="noreferrer">
+      <a href="https://x.com/_prajwalpatil" target="_blank" rel="noreferrer">
         <FaXTwitter />
       </a>
     </div>
