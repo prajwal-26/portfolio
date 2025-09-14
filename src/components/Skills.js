@@ -1,19 +1,35 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Skills.css';
-import { FaDocker, FaAws, FaGitAlt, FaLinux, FaJenkins, FaPython, FaReact } from 'react-icons/fa';
-import { SiKubernetes } from 'react-icons/si';
+import { 
+  FaLinux, FaGitAlt, FaDocker, FaJenkins, FaAws, FaPython 
+} from "react-icons/fa";
+import { 
+  SiKubernetes, SiTerraform, SiAnsible, SiHelm, SiArgo, SiPrometheus, 
+  SiGrafana, SiVault, SiNginx, SiSonarqube
+} from "react-icons/si";
 
 const skills = [
+  { name: 'Linux', icon: <FaLinux /> },
+  { name: 'Git', icon: <FaGitAlt /> },
   { name: 'Docker', icon: <FaDocker /> },
-{ name: 'Kubernetes', icon: <SiKubernetes /> },
+  { name: 'Kubernetes', icon: <SiKubernetes /> },
   { name: 'Jenkins', icon: <FaJenkins /> },
   { name: 'AWS', icon: <FaAws /> },
-  { name: 'Git', icon: <FaGitAlt /> },
-  { name: 'Linux', icon: <FaLinux /> },
+  { name: 'Terraform', icon: <SiTerraform /> },
+  { name: 'Ansible', icon: <SiAnsible /> },
+  { name: 'Helm', icon: <SiHelm /> },
+  { name: 'Argo CD', icon: <SiArgo /> },
+  { name: 'Prometheus', icon: <SiPrometheus /> },
+  { name: 'Grafana', icon: <SiGrafana /> },
+  { name: 'HashiCorp Vault', icon: <SiVault /> },
+  { name: 'Nginx', icon: <SiNginx /> },
   { name: 'Python', icon: <FaPython /> },
-  { name: 'React', icon: <FaReact /> },
+
+  // Additional recommended DevOps skills
+  { name: 'SonarQube', icon: <SiSonarqube /> },
 ];
+
 
 const Skills = () => {
   return (

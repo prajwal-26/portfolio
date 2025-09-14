@@ -1,3 +1,11 @@
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 15px;
+  text-align: justify; /* makes all lines aligned neatly */
+}
+
 .about-section {
   padding: 100px 20px;
   background-color: #121212;
