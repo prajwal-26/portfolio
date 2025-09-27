@@ -36,7 +36,7 @@ const Experience = () => {
         ref={el => (cardsRef.current[0] = el)}
       >
         <div className="experience-header">
-          <h4>XYZ Tech Solutions</h4>
+          <h4>NITCO Inc.</h4>
           <span>June 2022 – Present</span>
         </div>
         <h5 className="experience-role">DevOps Engineer</h5>
