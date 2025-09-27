@@ -2,21 +2,27 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Projects.css';
 import { FaGithub } from 'react-icons/fa';
 import ProofModal from './ProofModal';
+import P1 from '../assets/P1.png'
+import P2 from '../assets/P2.png'
+import P3 from '../assets/P3.png'
+import P4 from '../assets/P4.jpg'
+import P5 from '../assets/P5.jpg'
+import P6 from '../assets/P6.png'
 
 const projects = [
   {
-    title: 'CI/CD Pipeline Setup',
+    title: 'Cloud Infrastructure Automation and CI/CD with AWS and GitOps',
     description: (
-      <>
-        Developed a robust <strong>CI/CD pipeline</strong> using <strong>Jenkins</strong>, integrated with <strong>GitHub</strong> and <strong>Docker</strong>.<br />
-        Enabled <strong>automated testing</strong>, building, and deployment to <strong>AWS EC2</strong>.<br />
-        Implemented <strong>multi-branch pipeline</strong> configuration for microservices.<br />
-        Monitored deployments using <strong>Prometheus</strong> and <strong>Grafana</strong>.<br />
-        Secured credentials using <strong>Jenkins Credentials Manager</strong>.
-      </>
+<>
+  Built a <strong>secure AWS infrastructure</strong> with <strong>Terraform</strong>, <strong>Ansible</strong>, and a highly available <strong>EKS cluster</strong>.<br />
+  Automated <strong>Docker workflows</strong> with <strong>Trivy</strong> and pushed to <strong>ECR</strong>.<br />
+  Implemented <strong>GitOps</strong> with <strong>ArgoCD & Helm</strong>, configured <strong>Nginx Ingress</strong> and <strong>Prometheus/Grafana</strong> monitoring.<br />
+  Applied <strong>auto-scaling</strong> and removed idle resources to improve <strong>reliability</strong>.<br />
+</>
+
     ),
-    github: 'https://github.com/prajwal/example-ci-cd',
-    images: ['/assets/ci1.png', '/assets/ci2.png', '/assets/ci3.png']
+    github: 'https://github.com/prajwal-26/infra-to-deploy-3tier.git',
+    images: [P1,P2,P3,P4,P5,P6]
   },
   {
     title: 'Infrastructure as Code with Terraform',

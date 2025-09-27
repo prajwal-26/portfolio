@@ -101,7 +101,7 @@
   padding: 24px;
   flex: 0 0 480px;        /* Fixed width so scrolling works */
   border-radius: 18px;
-  min-height: 340px;
+  min-height: 380px;
   position: relative;
   display: flex;
   flex-direction: column;
