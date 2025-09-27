@@ -8,6 +8,19 @@ import P3 from '../assets/P3.png'
 import P4 from '../assets/P4.jpg'
 import P5 from '../assets/P5.jpg'
 import P6 from '../assets/P6.png'
+import P11 from '../assets/P11.png'
+import P22 from '../assets/P22.png'
+import P33 from '../assets/P33.png'
+import P44 from '../assets/P44.png'
+import P55 from '../assets/P55.png'
+import P111 from '../assets/P111.png'
+import P222 from '../assets/P222.png'
+import P333 from '../assets/P333.png'
+import P444 from '../assets/P444.png'
+import A1 from '../assets/A1.png'
+import A2 from '../assets/A2.png'
+import A3 from '../assets/A3.png'
+import A4 from '../assets/A4.png'
 
 const projects = [
   {
@@ -33,39 +46,45 @@ const projects = [
   Configured servers with <strong>Ansible</strong> (Node.js, Nginx, app deployment).<br />
   Integrated into a <strong>single shell script</strong> for one-command provisioning and deployment.<br />
 </>
-
     ),
     github: 'https://github.com/prajwal-26/Terraform-ansible.git',
-    images: ['/assets/tf1.png', '/assets/tf2.png']
+    images: [P11,P22,P33,P44,P55]
   },
   {
-    title: 'Kubernetes Deployment',
+    title: 'Cloud-Native Deployment on Amazon EKS',
     description: (
-      <>
-        Deployed microservices on <strong>Kubernetes</strong> with <strong>Helm</strong> and <strong>Ingress</strong>.<br />
-        Implemented HPA and secured secrets.
-      </>
+    <>
+  Deployed a <strong>containerized web application</strong> on <strong>Amazon EKS</strong>.<br />
+  Used <strong>Kubernetes</strong> for <strong>scaling</strong>, <strong>high availability</strong>, and <strong>auto-healing</strong>.<br />
+  Leveraged <strong>EKS</strong> for <strong>secure</strong>, <strong>reliable orchestration</strong> and simplified management.<br />
+  Ensured <strong>smooth rollouts</strong> and easier <strong>lifecycle management</strong> of the application.<br />
+</>
     ),
-    github: 'https://github.com/prajwal/example-k8s',
-    images: ['/assets/k8s1.png', '/assets/k8s2.png']
+    github: 'https://github.com/prajwal-26/java-boardgame.git',
+    images: [P111,P222,P333,P444]
   },
   {
-    title: 'Monitoring & Logging Stack',
+    title: 'Go Web App Deployment with Kubernetes, Helm & GitHub Actions',
     description: (
-      <>
-        Centralized logging & monitoring using <strong>ELK</strong> and <strong>Prometheus/Grafana</strong>.<br />
-        Created dashboards and alerts.
-      </>
+     <>
+  
+  Built and pushed <strong>Docker images</strong> to <strong>Docker Hub</strong>.<br />
+  Provisioned an <strong>EKS cluster</strong> on <strong>AWS</strong>.<br />
+  Packaged app using <strong>Helm charts</strong> for <strong>Dev / Staging / Prod</strong> configs.<br />
+  Created a <strong>CI pipeline</strong> in <strong>GitHub Actions</strong> for build, test, and push.<br />
+  Enabled <strong>GitOps delivery</strong> with <strong>ArgoCD</strong> to Kubernetes.<br />
+</>
+
     ),
-    github: 'https://github.com/prajwal/example-monitoring',
-    images: ['/assets/mon1.png', '/assets/mon2.png']
+    github: 'https://github.com/prajwal-26/go-webapp.git',
+    images: [A1,A2,A3,A4]
   },
-  {
-    title: 'Demo App',
-    description: <>Small demo to show proof modal & images.</>,
-    github: 'https://github.com/prajwal/demo-project',
-    images: ['/assets/a.png']
-  }
+  // {
+  //   title: 'Demo App',
+  //   description: <>Small demo to show proof modal & images.</>,
+  //   github: 'https://github.com/prajwal/demo-project',
+  //   images: ['/assets/a.png']
+  // }
 ];
 
 const Projects = () => {
