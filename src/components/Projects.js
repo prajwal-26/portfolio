@@ -25,15 +25,17 @@ const projects = [
     images: [P1,P2,P3,P4,P5,P6]
   },
   {
-    title: 'Infrastructure as Code with Terraform',
+    title: 'Infrastructure Provisioning to Deployment in One Command!',
     description: (
-      <>
-        Created reusable <strong>Terraform modules</strong> for setting up AWS infrastructure.<br />
-        Automated provisioning of <strong>VPC, Subnets, EC2, S3, and RDS</strong>.<br />
-        Integrated Terraform with <strong>GitLab pipelines</strong> and remote backends.
-      </>
+     <>
+  Automated <strong>web app deployment</strong> using <strong>Terraform</strong>, <strong>Ansible</strong>, and <strong>PM2</strong>.<br />
+  Provisioned <strong>VPC</strong>, <strong>subnets</strong>, and <strong>EC2 instances</strong> with Terraform.<br />
+  Configured servers with <strong>Ansible</strong> (Node.js, Nginx, app deployment).<br />
+  Integrated into a <strong>single shell script</strong> for one-command provisioning and deployment.<br />
+</>
+
     ),
-    github: 'https://github.com/prajwal/example-terraform',
+    github: 'https://github.com/prajwal-26/Terraform-ansible.git',
     images: ['/assets/tf1.png', '/assets/tf2.png']
   },
   {
@@ -167,7 +169,7 @@ const Projects = () => {
 
   return (
     <section className="projects" id="projects">
-      <h2 className="section-title">🚀 My Projects</h2>
+      <h2 className="section-title">Projects</h2>
 
       <div className="projects-container" ref={containerRef}>
         {projects.map((project, index) => (
